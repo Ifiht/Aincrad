@@ -145,7 +145,7 @@ public class CraftMapColorCache implements MapPalette.MapColorCache {
     }
 
     @Override
-    public boolean isCached() {
+    public synchronized boolean isCached() { // SparklyPaper - fix concurrency issues when using "imageToBytes" in multiple threads
         return this.cached || (!this.running.get() && this.initCache().isDone());
     }
 
