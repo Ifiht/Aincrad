@@ -5,10 +5,10 @@ Subject: [PATCH] Parallel World Ticking
 
 
 diff --git a/ca/spottedleaf/moonrise/patches/chunk_system/scheduling/ChunkHolderManager.java b/ca/spottedleaf/moonrise/patches/chunk_system/scheduling/ChunkHolderManager.java
-index 2a8b64c26110e1cb61f08dc5c1a8391b85b3dbc1..0b5333ba532862425fa89b207582908cfa6075df 100644
+index b5817aa8f537593f6d9fc6b612c82ccccb250ac7..2dbbd33690265cbacd4c6516d24bc64890f50990 100644
 --- a/ca/spottedleaf/moonrise/patches/chunk_system/scheduling/ChunkHolderManager.java
 +++ b/ca/spottedleaf/moonrise/patches/chunk_system/scheduling/ChunkHolderManager.java
-@@ -1035,7 +1035,7 @@ public final class ChunkHolderManager {
+@@ -1031,7 +1031,7 @@ public final class ChunkHolderManager {
          if (changedFullStatus.isEmpty()) {
              return;
          }
@@ -17,7 +17,7 @@ index 2a8b64c26110e1cb61f08dc5c1a8391b85b3dbc1..0b5333ba532862425fa89b207582908c
              this.taskScheduler.scheduleChunkTask(() -> {
                  final ArrayDeque<NewChunkHolder> pendingFullLoadUpdate = ChunkHolderManager.this.pendingFullLoadUpdate;
                  for (int i = 0, len = changedFullStatus.size(); i < len; ++i) {
-@@ -1061,7 +1061,7 @@ public final class ChunkHolderManager {
+@@ -1057,7 +1057,7 @@ public final class ChunkHolderManager {
  
      // note: never call while inside the chunk system, this will absolutely break everything
      public void processUnloads() {
@@ -26,7 +26,7 @@ index 2a8b64c26110e1cb61f08dc5c1a8391b85b3dbc1..0b5333ba532862425fa89b207582908c
  
          if (BLOCK_TICKET_UPDATES.get() == Boolean.TRUE) {
              throw new IllegalStateException("Cannot unload chunks recursively");
-@@ -1343,7 +1343,7 @@ public final class ChunkHolderManager {
+@@ -1339,7 +1339,7 @@ public final class ChunkHolderManager {
  
          List<NewChunkHolder> changedFullStatus = null;
  

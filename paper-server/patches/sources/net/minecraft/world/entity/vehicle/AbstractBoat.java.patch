@@ -75,6 +75,16 @@
          this.applyEffectsFromBlocks();
          this.applyEffectsFromBlocks();
          this.tickBubbleColumn();
+@@ -521,7 +_,8 @@
+             }
+         }
+ 
+-        return f / i6;
++        float slippyness = f / i6;
++        return Mth.clamp(slippyness, 0.0F, 0.45F);
+     }
+ 
+     private boolean checkInWater() {
 @@ -598,7 +_,7 @@
              this.waterLevel = this.getY(1.0);
              double d2 = this.getWaterLevelAbove() - this.getBbHeight() + 0.101;
