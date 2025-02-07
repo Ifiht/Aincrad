@@ -74,8 +74,8 @@ public abstract class CraftEntity implements org.bukkit.entity.Entity {
     private EntityDamageEvent lastDamageEvent;
     private final CraftPersistentDataContainer persistentDataContainer = new CraftPersistentDataContainer(CraftEntity.DATA_TYPE_REGISTRY);
     protected net.kyori.adventure.pointer.Pointers adventure$pointers; // Paper - implement pointers
-    // Paper start - Folia shedulers
-    public final io.papermc.paper.threadedregions.EntityScheduler taskScheduler = new io.papermc.paper.threadedregions.EntityScheduler(this);
+    // Paper start - Folia schedulers
+    public final io.papermc.paper.threadedregions.EntityScheduler taskScheduler; // = new io.papermc.paper.threadedregions.EntityScheduler(this); // SparklyPaper - skip EntityScheduler's executeTick checks if there isn't any tasks to be run
     private final io.papermc.paper.threadedregions.scheduler.FoliaEntityScheduler apiScheduler = new io.papermc.paper.threadedregions.scheduler.FoliaEntityScheduler(this);
 
     @Override
@@ -88,6 +88,7 @@ public abstract class CraftEntity implements org.bukkit.entity.Entity {
         this.server = server;
         this.entity = entity;
         this.entityType = CraftEntityType.minecraftToBukkit(entity.getType());
+        this.taskScheduler = new io.papermc.paper.threadedregions.EntityScheduler(this.entity.getServer(), this); // SparklyPaper - skip EntityScheduler's executeTick checks if there isn't any tasks to be run
     }
 
     public static <T extends Entity> CraftEntity getEntity(CraftServer server, T entity) {
