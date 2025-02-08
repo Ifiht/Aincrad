@@ -1,12 +1,8 @@
-Aincrad
-[![Discord](https://img.shields.io/discord/289587909051416579.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/papermc)
-===========
-
-# Aincrad 🛡️
+# Aincrad 🛡️ [![Discord](https://img.shields.io/discord/1211431882957267024.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/RnKzBfWh7j)
 This is the custom server code used in the Minecraft world of Iðavöllr.
 
 **Changes from PaperMC**
-- [ ] Edit max speeds so minecart > horse > ice boat (paddles only, sails should still be fast)
+- [X] Edit max speeds so minecart > horse > ice boat (paddles only, sails should still be fast)
 - [ ] Implement Giants AI
 - [ ] Implement Villager Tasks (Armorer heals golems, Priest heals villagers)
 - [ ] Implement [Smallships](https://github.com/talhanation/smallships/tree/main)
