@@ -19,14 +19,14 @@ anticheat:
       all-models:
         also-obfuscate: []
         dont-obfuscate:
-        - minecraft:lodestone_tracker
+          - minecraft:lodestone_tracker
         sanitize-count: true
       enable-item-obfuscation: false
       model-overrides:
         minecraft:elytra:
           also-obfuscate: []
           dont-obfuscate:
-          - minecraft:damage
+            - minecraft:damage
           sanitize-count: true
 block-updates:
   disable-chorus-plant-updates: false
@@ -42,9 +42,9 @@ chunk-loading-basic:
   player-max-chunk-load-rate: 100.0
   player-max-chunk-send-rate: 75.0
 chunk-system:
-  gen-parallelism: default
-  io-threads: -1
-  worker-threads: -1
+  gen-parallelism: true
+  io-threads: 4
+  worker-threads: 2
 collisions:
   enable-player-collisions: true
   send-full-pos-for-hard-colliding-entities: true
@@ -129,7 +129,7 @@ unsupported-settings:
   allow-permanent-block-break-exploits: false
   allow-piston-duplication: false
   allow-unsafe-end-portal-teleportation: false
-  compression-format: ZLIB
+  compression-format: LZ4
   perform-username-validation: true
   skip-vanilla-damage-tick-when-shield-blocked: false
 watchdog:
