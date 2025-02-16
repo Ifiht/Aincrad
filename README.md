@@ -27,7 +27,15 @@ This is the custom server code used in the Minecraft world of Iðavöllr.
 3. Make a list of any code that should make it into Aincrad
 4. `git checkout seed`
 5. `git cherry-pick <new_paper_goodness_commit_hash>`
-6. Push the changes back to origin, all done!
+6. `gradlew applyPatches` - this makes sure your patch/source files are in sync. Forgetting this step will lead to errors the next time you `rebuildPatches`
+7. Push the changes back to origin, all done!
+
+> [!NOTE]
+> for mistakes,  
+> Reset all non-committed local changes: `git reset --hard`  
+> Reset branch to remote state: `git reset --hard origin/seed`  
+> Reset to specific commit: `git reset --hard <commit-hash>`,  
+>   then `git push origin seed --force`
 
 ## CHANGES
 ------
