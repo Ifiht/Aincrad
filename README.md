@@ -13,13 +13,11 @@ This is the custom server code used in the Minecraft world of Iðavöllr.
 > Latest PaperMC commit screened: Fix Squid and Dolphin spawn height (cb6c57e)
 
 ## SETUP
-------
 ### Getting Started (new machines)
 1. Clone repo
 2. `./gradlew applyPatches` from root
 
 ## REPO SYNC
-------
 1. `git checkout main` - switch to the main branch, that tracks Paper
 2. via Github UI, PR all new changes into main
 > [!TIP]  
@@ -38,7 +36,6 @@ This is the custom server code used in the Minecraft world of Iðavöllr.
 >   then `git push origin seed --force`
 
 ## CHANGES
-------
 ### Apply Changes (per-file)
 1. Make changes (in paper-server/src/minecraft/java)
 2. `./gradlew fixupSourcePatches`
