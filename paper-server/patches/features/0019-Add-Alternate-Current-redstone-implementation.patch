@@ -22,7 +22,7 @@ Alternate Current's wire handler.
 
 diff --git a/alternate/current/wire/LevelHelper.java b/alternate/current/wire/LevelHelper.java
 new file mode 100644
-index 0000000000000000000000000000000000000000..ff663d3089627e75221aa128aff4bf5cc459addb
+index 0000000000000000000000000000000000000000..eda108e2df9bf7d1ddd89287b8d2c2d7f1637c96
 --- /dev/null
 +++ b/alternate/current/wire/LevelHelper.java
 @@ -0,0 +1,66 @@
@@ -57,7 +57,7 @@ index 0000000000000000000000000000000000000000..ff663d3089627e75221aa128aff4bf5c
 +    static boolean setWireState(ServerLevel level, BlockPos pos, BlockState state, boolean updateNeighborShapes) {
 +        int y = pos.getY();
 +
-+        if (y < level.getMinY() || y > level.getMaxY()) {
++        if (y < level.getMinY() || y >= level.getMaxY()) {
 +            return false;
 +        }
 +
