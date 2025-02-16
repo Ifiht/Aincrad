@@ -10,7 +10,7 @@ This is the custom server code used in the Minecraft world of Iðavöllr.
 - [ ] Implement [Accessories](https://github.com/wisp-forest/accessories/)
 - [X] Implement [Sparkly](https://github.com/SparklyPower/SparklyPaper) per-world ticking
 > [!WARNING]
-> Latest PaperMC commit screened: Fix Squid and Dolphin spawn height (cb6c57e)
+> Latest PaperMC commit screened: `Switch to jspecify annotations for Player (61312fd)`
 
 ## SETUP
 ### Getting Started (new machines)
