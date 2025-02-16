@@ -1,5 +1,5 @@
 ## Upstream Cherry-Picks
- - Add support for lz4 (https://github.com/Ifiht/Aincrad/commit/597dcfffb9444f2c43a508a216e6f5d5eb712c04)
+ - Add support for lz4 (597dcfffb9444f2c43a508a216e6f5d5eb712c04)
  - Fix Squid and Dolphin spawn height (cb6c57e0f8324e07090598e5117c37574c3dd014)
  - Make Sittable interface extend Entity (53ae5c95b71d6621bfd4b53c6792bb90652e1e9e)
  - Prevent duplicate raider in RaidSpawnWaveEvent list (51acc802b85ba2da9583b06a0e29405905f23722)
