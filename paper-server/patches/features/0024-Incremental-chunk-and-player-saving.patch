@@ -5,10 +5,10 @@ Subject: [PATCH] Incremental chunk and player saving
 
 
 diff --git a/net/minecraft/server/MinecraftServer.java b/net/minecraft/server/MinecraftServer.java
-index 8923f02eb676996e8a93bd48f5914705bd7328cf..0236eafae0363fc333a82edddd5e5733820728f1 100644
+index 409c1134327bfcc338c3ac5e658a83cc396645d1..cc2d442682496197d29ace79b22e6cf6fb7edf5e 100644
 --- a/net/minecraft/server/MinecraftServer.java
 +++ b/net/minecraft/server/MinecraftServer.java
-@@ -962,7 +962,7 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
+@@ -960,7 +960,7 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
          boolean var4;
          try {
              this.isSaving = true;
@@ -17,7 +17,7 @@ index 8923f02eb676996e8a93bd48f5914705bd7328cf..0236eafae0363fc333a82edddd5e5733
              var4 = this.saveAllChunks(suppressLog, flush, forced);
          } finally {
              this.isSaving = false;
-@@ -1535,9 +1535,29 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
+@@ -1533,9 +1533,29 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
          }
  
          this.ticksUntilAutosave--;
@@ -50,10 +50,10 @@ index 8923f02eb676996e8a93bd48f5914705bd7328cf..0236eafae0363fc333a82edddd5e5733
          ProfilerFiller profilerFiller = Profiler.get();
          this.runAllTasks(); // Paper - move runAllTasks() into full server tick (previously for timings)
 diff --git a/net/minecraft/server/level/ServerLevel.java b/net/minecraft/server/level/ServerLevel.java
-index 5bf38ab129451e867b638cfbd2d7be59cbf7f38d..67de67cf1e33672fe33fbb88aeb92e3a020a4ae5 100644
+index 42995dac38248032b6abecc27124adfe12ec4cab..28a67294c3e678e01d5dfd68b950234213d8e55c 100644
 --- a/net/minecraft/server/level/ServerLevel.java
 +++ b/net/minecraft/server/level/ServerLevel.java
-@@ -1316,6 +1316,28 @@ public class ServerLevel extends Level implements ServerEntityGetter, WorldGenLe
+@@ -1318,6 +1318,28 @@ public class ServerLevel extends Level implements ServerEntityGetter, WorldGenLe
          return !this.server.isUnderSpawnProtection(this, pos, player) && this.getWorldBorder().isWithinBounds(pos);
      }
  
