@@ -9,8 +9,6 @@ This is the custom server code used in the Minecraft world of Iðavöllr.
 - [ ] Implement [Smallships](https://github.com/talhanation/smallships/tree/main)
 - [ ] Implement [Accessories](https://github.com/wisp-forest/accessories/)
 - [X] Implement [Sparkly](https://github.com/SparklyPower/SparklyPaper) per-world ticking
-> [!WARNING]
-> Latest PaperMC commit screened: `Switch to jspecify annotations for Player (61312fd)`
 
 ## SETUP
 ### Getting Started (new machines)
