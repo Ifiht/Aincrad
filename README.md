@@ -54,3 +54,8 @@ find the file needed using "view source" or manually in the gradle cache, add th
 
 #### VERY helpful guide to patching:
 [PaperMC Contrib](https://github.com/PaperMC/Paper/blob/master/CONTRIBUTING.md)
+
+> [!TIP]
+> If IntelliJ Idea is still not resolving references,
+> go to File -> Invalidate Caches, delete the .idea folder,
+> and restart the program.
