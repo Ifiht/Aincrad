@@ -33,6 +33,10 @@ This is the custom server code used in the Minecraft world of Iðavöllr.
 > Reset to specific commit: `git reset --hard <commit-hash>`,  
 >   then `git push origin seed --force`
 
+## BUILD
+1. Go to the gradle tasks -> bundling
+2. `createMojmapBundlerJar`
+
 ## CHANGES
 ### Apply Changes (per-file)
 1. Make changes (in paper-server/src/minecraft/java)
