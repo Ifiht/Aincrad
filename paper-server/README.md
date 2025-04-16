@@ -18,13 +18,12 @@
 - [Parallel World Ticking](https://github.com/SparklyPower/SparklyPaper/blob/ver/1.21.4/sparklypaper-server/paper-patches/features/0009-Parallel-world-ticking.patch)
 - [ImageToBytes Concurrency](https://github.com/SparklyPower/SparklyPaper/blob/ver/1.21.4/sparklypaper-server/paper-patches/features/0003-Fix-concurrency-issues-when-using-imageToBytes.patch)
 - [Only Tick Scheduled Entities](https://github.com/SparklyPower/SparklyPaper/blob/ver/1.21.4/sparklypaper-server/paper-patches/features/0004-Skip-EntityScheduler-s-executeTick-checks-if-there-i.patch)
--
 
 ## Patches from [Purpur](https://github.com/PurpurMC/Purpur)
-- 
+- None yet!
 
 ## Patches from [Pufferfish](https://github.com/pufferfish-gg/Pufferfish)
-- 
+- None yet!
 
 ## Patches from [Folia](https://github.com/PaperMC/Folia)
 - None yet!
