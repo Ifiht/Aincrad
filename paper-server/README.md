@@ -12,7 +12,7 @@
 - add method on ItemStack to edit pdc [6c16e4b](https://github.com/Ifiht/Aincrad/commit/6c16e4beb4dcfcecc90ee8948c0f908086d14bc7)
 - Cleanup damage source a bit [716ba6e](https://github.com/Ifiht/Aincrad/commit/716ba6e72afa970f1cab70696d8da066d7dbb029)
 - Add EntityAttemptSmashAttackEvent [c59ef8a](https://github.com/Ifiht/Aincrad/commit/c59ef8a03b7088ba5884c9a7622b9c690f6ffdd9)
-- 
+- Fix EntityBreedEvent cancellation [1a04e96](https://github.com/Ifiht/Aincrad/commit/1a04e96ab7095f9c0ea45d39b7448401c5ae5ee2)
 
 ## Patches from [SparklyPaper](https://github.com/SparklyPower/SparklyPaper)
 - [Parallel World Ticking](https://github.com/SparklyPower/SparklyPaper/blob/ver/1.21.4/sparklypaper-server/paper-patches/features/0009-Parallel-world-ticking.patch)
