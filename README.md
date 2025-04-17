@@ -18,8 +18,6 @@ This is the custom server code used in the Minecraft world of Iðavöllr.
 ## REPO SYNC
 1. `git checkout main` - switch to the main branch, that tracks Paper
 2. via Github UI, PR all new changes into main
-> [!TIP]  
-> While we're on 1.21.4, so long as all the changes are desired we can just `git merge main` from the `seed` branch to include everything.
 3. Make a list of any code that should make it into Aincrad
 4. `git checkout seed`
 5. `git cherry-pick <new_paper_goodness_commit_hash>`
