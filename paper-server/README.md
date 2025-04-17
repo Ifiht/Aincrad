@@ -13,6 +13,9 @@
 - Cleanup damage source a bit [716ba6e](https://github.com/Ifiht/Aincrad/commit/716ba6e72afa970f1cab70696d8da066d7dbb029)
 - Add EntityAttemptSmashAttackEvent [c59ef8a](https://github.com/Ifiht/Aincrad/commit/c59ef8a03b7088ba5884c9a7622b9c690f6ffdd9)
 - Fix EntityBreedEvent cancellation [1a04e96](https://github.com/Ifiht/Aincrad/commit/1a04e96ab7095f9c0ea45d39b7448401c5ae5ee2)
+- Do not queue player info packets [edacfdf](https://github.com/Ifiht/Aincrad/commit/edacfdf4624735d093413e64b4efd192f72d844e)
+- Move EntityUtil to correct directory [cafef9c](https://github.com/Ifiht/Aincrad/commit/cafef9ce9bb73cbcb9bc9c59eb982ae2516f5ee6)
+- 
 
 ## Patches from [SparklyPaper](https://github.com/SparklyPower/SparklyPaper)
 - [Parallel World Ticking](https://github.com/SparklyPower/SparklyPaper/blob/ver/1.21.4/sparklypaper-server/paper-patches/features/0009-Parallel-world-ticking.patch)
