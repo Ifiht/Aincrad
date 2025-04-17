@@ -8,7 +8,6 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ca.spottedleaf.moonrise.common.util.EntityUtil;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
